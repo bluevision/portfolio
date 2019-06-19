@@ -1,0 +1,102 @@
+body {
+    background-color: white;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 120px;
+    margin-left: 120px;
+
+}
+.link {
+    font-family: raleway;
+    font-size: 20px;
+    color: rgb(64, 64, 64);
+    margin: 0 8px;
+
+}
+
+
+.link:hover{
+color: rgb(218, 165, 32);
+}
+
+#daniel {
+    font-family: raleway;
+    font-size: 26px;
+    color: rgb(64, 64, 64);
+    font-weight: bold;
+
+}
+
+#daniel:hover{
+color: rgb(218, 165, 32);
+}
+
+.typewriter {
+	display: inline-block;
+}
+
+.text-hello{
+    display: inline-block;
+      overflow: hidden;
+     animation-name: type; 
+     animation-duration: 5s; 
+     animation-delay: steps(40, end);
+     animation-name: blink; 
+     animation-duration: .3s; 
+     animation-delay: step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: 'Segoe UI', monospace;
+    font-weight: 700;
+    border-right: 4px solid black;
+    box-sizing: border-box;
+}
+
+@keyframes type {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent; 
+    }
+    50% { 
+        border-color: black; 
+    }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bottom {
+    height: 1000px;
+    background-color:white;
+    font-size:36px;
+}
+
+@media only screen and (max-width: 768px) {
+    #nav {
+        margin: 0 0px;
+    }  
+}
