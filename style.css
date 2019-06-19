@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 body {
     background-color: white;
 }
@@ -12,7 +14,7 @@ body {
 
 }
 .link {
-    font-family: raleway;
+    font-family: 'Raleway';
     font-size: 20px;
     color: rgb(64, 64, 64);
     margin: 0 8px;
@@ -25,7 +27,7 @@ color: rgb(218, 165, 32);
 }
 
 #daniel {
-    font-family: raleway;
+    font-family: 'Raleway';
     font-size: 26px;
     color: rgb(64, 64, 64);
     font-weight: bold;
@@ -36,44 +38,45 @@ color: rgb(218, 165, 32);
 color: rgb(218, 165, 32);
 }
 
-.typewriter {
-	display: inline-block;
-}
 
-.text-hello{
-    display: inline-block;
-      overflow: hidden;
-     animation-name: type; 
-     animation-duration: 5s; 
-     animation-delay: steps(40, end);
-     animation-name: blink; 
-     animation-duration: .3s; 
-     animation-delay: step-end infinite;
+  
+  p{
+    color: black; 
+    font-family: "Raleway";
+    font-size: 36px;
+    margin: 10px 0 0 10px;
     white-space: nowrap;
-    font-size: 30px;
-    font-family: 'Segoe UI', monospace;
-    font-weight: 700;
-    border-right: 4px solid black;
-    box-sizing: border-box;
-}
+    overflow: hidden;
+    width: 100px;
+    animation: type 0.5s steps(60, end); 
+    border-right: 2px solid black;
+  }
+  
+  p:nth-child(2){
+    animation: type2 3.5s steps(60, end);
+    width: 740px;
+  }
+  
+  
+  
+  @keyframes type{ 
+    0% {width: 0;}
+    100% { width: 100; } 
 
-@keyframes type {
-    from { 
-        width: 0% 
-    }
-    to { 
-        width: 100% 
-    }
-}
-
-@keyframes blink {
-    from, to { 
-        border-color: transparent; 
-    }
-    50% { 
-        border-color: black; 
-    }
-}
+  } 
+  
+  @keyframes type2{
+    0%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  
+  ::selection{
+    background: black;
+  }
 
 .parallax {
   /* The image used */
