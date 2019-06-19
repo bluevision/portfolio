@@ -48,15 +48,19 @@ color: rgb(218, 165, 32);
     white-space: nowrap;
     overflow: hidden;
     width: 100px;
-    animation: type 0.5s steps(60, end); 
+    animation: type 0.5s steps(6, end); 
     border-right: 2px solid black;
   }
   
   p:nth-child(2){
-    animation: type2 3.5s steps(60, end);
-    width: 740px;
+    animation: type2 1.2s steps(16, end);
+    width: 212px;
   }
   
+  p:nth-child(3){
+    animation: type2 3s steps(34, end);
+    width: 530px;
+  }
   
   
   @keyframes type{ 
