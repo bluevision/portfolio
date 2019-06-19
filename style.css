@@ -40,54 +40,79 @@ color: rgb(218, 165, 32);
 
 
   
-  p{
-    color: black; 
-    font-family: "Raleway";
+.typing p{
+    margin: 25px 25px;
+    border-right: 2px solid white;
+    font-family: "Segoe UI";
+    color: white;
     font-size: 36px;
-    margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
-    width: 100px;
-    animation: type 0.5s steps(6, end); 
-    border-right: 2px solid black;
   }
   
-  p:nth-child(2){
-    animation: type2 1.2s steps(16, end);
-    width: 212px;
+.typing p:nth-child(1){
+    opacity: 0;
+    width: 95px;
+    animation: type1 0.64s steps(9, end);
+    animation-fill-mode: forwards;
   }
   
-  p:nth-child(3){
-    animation: type2 3s steps(34, end);
-    width: 530px;
+.typing p:nth-child(2){
+  opacity: 0;
+    width: 220px;
+    animation: type2 1.2s 0.64s steps(16, end);
+    animation-fill-mode: forwards;
   }
   
+  .typing p:nth-child(3){
+    opacity: 0;
+    width: 478px;
+    animation: 
+      type3 2.5s 1.84s steps(34, end), 
+      cursor 1s step-end infinite alternate;
+    animation-fill-mode: forwards;
+  }
   
-  @keyframes type{ 
+  @keyframes type1{ 
     0% {width: 0;}
-    100% { width: 100; } 
+    1% {opacity: 1;}
+    99.9% {border-right: 2px solid white;}
+    100% {
+      border: none;
+      opacity: 1;
+    }
+  } 
 
+  @keyframes type2{ 
+    0% {width: 0;}
+    1% {opacity: 1;}
+    99.9% {border-right: 2px solid white;}
+    100% {
+      border: none;
+      opacity: 1;
+    }
   } 
-  
-  @keyframes type2{
-    0%{width: 0;}
-    100%{ width: 100; } 
+
+  @keyframes type3{ 
+    0% {width: 0;}
+    1% {opacity: 1;}
+    100% {
+      border-right: 2px solid white; 
+      opacity: 1;
+    }
   } 
+ 
+@keyframes cursor{
+  50% {border-color: transparent;}
+}
   
-  @keyframes blink{
-    to{opacity: .0;}
-  }
-  
-  ::selection{
-    background: black;
-  }
 
 .parallax {
   /* The image used */
   background-image: url("img_parallax.png");
 
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 800px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
