@@ -6,13 +6,13 @@
 
     </head>
     <main id="main">
-        <div id="nav">
+        <div class="nav">
             <div class="links">
-                <label id="daniel">DANIEL CRAIN</label>
+                <label class="heading">DANIEL CRAIN</label>
             </div>
             <div class="links">
-                <label class="link">About Me</label>
-                <label class="link">Contact</label>
+                <a href="#portfolio"><div class="link">Portfolio</div></a>
+                <a href="#contact"><div class="link">Contact</div></a>
             </div>
         </div>
 
@@ -23,7 +23,68 @@
                 <p>A PROFFESIONAL DEVELOPER</p>
             </div>
         </div>
-        <div id="bottom">
+        <div id="portfolio">
+            <label class="heading">Portfolio</label>
         </div>
+        <div id="images">
+            <div class="preview"><img class="thumbnail" src="./davinci_thumb.png">
+                <ul>
+                    <li>Photo Gallery</li>
+                    <li>CSS Grid Box</li>
+                    <li>More Stuff</li>
+                </ul>
+            </div>
+            <div class="preview"><img class="thumbnail" src="./me_thumb.png">
+                <ul>
+                    <li>Photo Gallery</li>
+                    <li>CSS Grid Box</li>
+                    <li>More Stuff</li>
+                </ul>
+            </div>
+            <div class="preview"><img class="thumbnail" src="./survey_thumb.png">
+                <ul>
+                    <li>Photo Gallery</li>
+                    <li>CSS Grid Box</li>
+                    <li>More Stuff</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact">
+            <label class="heading">Contact Me</label>
+        </div>
+        <div id="contact-form">
+                <div class="row">
+                    <label id="density-label">Name:</label>
+                    <span class="right">
+                        <input class="text" type="text" required>
+                    </span>
+                </div>
+                    
+                <div class="row">
+                    <label>Email:</label>
+                     <span class="right">
+                        <input class="text" type="email" required>
+                    </span>
+                </div>
+                        
+                <div class="row">
+                    <label>Random Input:</label>
+                    <div class="right">
+                        <input class="text" type="text" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <label>Random Input2:</label>
+                    <div class="right">
+                        <input class="text" type="text" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <textarea class="text" placeholder="Type additional comments here" rows="4" cols="50"></textarea>
+                </div>
+                <div class="button-submit">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </div>
     </main>
 </html>

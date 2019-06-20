@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: white;
+    font-family: 'Raleway';
 }
 
-#nav {
+#main {
+    margin: 0px;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    margin-right: 120px;
-    margin-left: 120px;
+
 
 }
 .link {
+    display: inline-block;
     font-family: 'Raleway';
     font-size: 20px;
     color: rgb(64, 64, 64);
@@ -26,47 +33,67 @@ body {
 color: rgb(218, 165, 32);
 }
 
-#daniel {
+.heading {
     font-family: 'Raleway';
     font-size: 26px;
-    color: rgb(64, 64, 64);
+    color: rgb(218, 165, 32);
     font-weight: bold;
 
 }
 
-#daniel:hover{
-color: rgb(218, 165, 32);
+
+
+.thumbnail {
+  width: 100%;
+
 }
 
+#portfolio {
+    margin-top: 50px;
+}
 
+#images {
+    margin-top: 30px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    grid-gap: 20px;
+
+}
+
+.typing {
+    margin-top: 50px;
+    margin-left: 50px;
+}
   
 .typing p{
-    margin: 25px 25px;
+    margin: 0;
     border-right: 2px solid white;
     font-family: "Segoe UI";
     color: white;
-    font-size: 36px;
+    font-size: 26px;
     white-space: nowrap;
     overflow: hidden;
   }
   
 .typing p:nth-child(1){
     opacity: 0;
-    width: 95px;
+    width: 2.8em;
     animation: type1 0.64s steps(9, end);
     animation-fill-mode: forwards;
   }
   
 .typing p:nth-child(2){
   opacity: 0;
-    width: 220px;
+    width: 6em;
     animation: type2 1.2s 0.64s steps(16, end);
     animation-fill-mode: forwards;
   }
   
   .typing p:nth-child(3){
     opacity: 0;
-    width: 478px;
+    width: 13.4em;
     animation: 
       type3 2.5s 1.84s steps(34, end), 
       cursor 1s step-end infinite alternate;
@@ -108,9 +135,10 @@ color: rgb(218, 165, 32);
   
 
 .parallax {
+  margin-top: 30px;
   /* The image used */
-  background-image: url("img_parallax.png");
-
+  border: solid 3px rgb(218, 165, 32);
+  background-image: url("css_mobile.png");
   /* Set a specific height */
   min-height: 800px; 
 
@@ -121,14 +149,45 @@ color: rgb(218, 165, 32);
   background-size: cover;
 }
 
-#bottom {
-    height: 1000px;
-    background-color:white;
-    font-size:36px;
+#images {
+  background-color: rgb(30, 30, 30);
+  border: solid 3px rgb(218, 165, 32);
 }
 
-@media only screen and (max-width: 768px) {
-    #nav {
-        margin: 0 0px;
+#contact-form {
+  background-color: rgb(30, 30, 30);
+  border: solid 3px rgb(218, 165, 32);
+}
+
+#contact {
+  margin-top: 50px;
+}
+
+.row {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.row:hover {
+  background-color: rgb(218, 165, 32);
+}
+
+@media only screen and (min-width:860px) {
+    #main{
+    margin-right: 10%;
+    margin-left: 10%;
     }  
+
+    .parallax {
+        background-image: url("css_desktop.png");
+    }
+
+    .typing p{
+    font-size: 36px;
+    }
+    .typing {
+      margin-top: 100px;
+      margin-left: 100px;
+    }
 }
