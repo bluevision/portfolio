@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+*{
+  margin: 0;
+padding: 0;
+border: 0;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -9,6 +14,11 @@ body {
 
 #main {
     margin: 0px;
+        -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    -webkit-appearance: none;
 }
 
 .nav {
@@ -142,7 +152,7 @@ color: rgb(218, 165, 32);
   /* Set a specific height */
   min-height: 800px; 
 
-  /* Create the parallax scrolling effect */
+  /* Create the parallnameax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,22 +165,92 @@ color: rgb(218, 165, 32);
 }
 
 #contact-form {
+  margin-top: 30px;
   background-color: rgb(30, 30, 30);
   border: solid 3px rgb(218, 165, 32);
+
 }
 
 #contact {
   margin-top: 50px;
 }
 
-.row {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+.text {
+  width: 380px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: black;
+  background-color: rgb(247, 247, 247);
 }
+
+.text::placeholder {
+  font-family: "Raleway";
+  font-size: 20px;
+  color: rgb(127, 127, 127);
+}
+.text:focus {outline:none;
+}
+
+#name {
+  margin-top: 30px;
+}
+
+#button-submit {
+  width: 390px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: right;
+
+}
+.submit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 6px;
+  font-family: "Raleway";
+  font-size: 20px;
+  color: white;
+  border: solid 3px rgb(218, 165, 32);
+  background-color: transparent;
+
+}
+.submit:hover{
+  color: black;
+  background-color: rgb(218, 165, 32);
+}
+.submit:focus {outline:none;
+  
+}
+
+
+
+.row {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 
 .row:hover {
   background-color: rgb(218, 165, 32);
+}
+
+#connect-links {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#connect-links img{
+  height: 40px;
+  margin: 0 10px;
 }
 
 @media only screen and (min-width:860px) {
