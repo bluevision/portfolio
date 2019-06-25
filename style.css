@@ -34,9 +34,13 @@ body {
 .link {
     display: inline-block;
     font-family: 'Raleway';
-    font-size: 1em;
+    font-size: calc(16px + 0.5vw);
     color: rgb(64, 64, 64);
 
+}
+
+.link-portfolio {
+  margin-right: 1em;
 }
 
 
@@ -46,7 +50,7 @@ color: rgb(218, 165, 32);
 
 .heading {
     font-family: 'Raleway';
-    font-size: 1.5em;
+    font-size: calc(20px + 0.5vw);
     color: rgb(218, 165, 32);
     font-weight: bold;
 
@@ -78,14 +82,16 @@ color: rgb(218, 165, 32);
 
 }
 
-
+.typing {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+}
   
 .typing p{
-
     border-right: 2px solid white;
     font-family: "Open Sans";
     color: white;
-    font-size: 1.5em;
+    font-size: calc(20px + 1vw);
     white-space: nowrap;
     overflow: hidden;
   }
