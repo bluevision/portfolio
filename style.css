@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 *{
   margin: 0;
 padding: 0;
@@ -6,14 +7,15 @@ border: 0;
 }
 html {
     scroll-behavior: smooth;
+    width: 100%;
 }
 body {
     background-color: white;
     font-family: 'Raleway';
+    width: 100%;
 }
 
 #main {
-    margin: 0px;
     -webkit-user-select: none; /* Safari 3.1+ */
     -moz-user-select: none; /* Firefox 2+ */
     -ms-user-select: none; /* IE 10+ */
@@ -32,9 +34,8 @@ body {
 .link {
     display: inline-block;
     font-family: 'Raleway';
-    font-size: 20px;
+    font-size: 1em;
     color: rgb(64, 64, 64);
-    margin: 0 8px;
 
 }
 
@@ -45,7 +46,7 @@ color: rgb(218, 165, 32);
 
 .heading {
     font-family: 'Raleway';
-    font-size: 26px;
+    font-size: 1.5em;
     color: rgb(218, 165, 32);
     font-weight: bold;
 
@@ -60,9 +61,13 @@ color: rgb(218, 165, 32);
 
 #portfolio {
     margin-top: 50px;
+    box-sizing: border-box;
+
 }
 
 #images {
+    border: solid 4px rgb(218, 165, 32);
+    background-color: #555555;
     margin-top: 30px;
     height: 600px;
     display: grid;
@@ -70,40 +75,38 @@ color: rgb(218, 165, 32);
     justify-self: center;
     grid-gap: 20px;
 
+
 }
 
-.typing {
-    margin-top: 50px;
-    margin-left: 50px;
-}
+
   
 .typing p{
-    margin: 0;
+
     border-right: 2px solid white;
-    font-family: "Segoe UI";
+    font-family: "Open Sans";
     color: white;
-    font-size: 26px;
+    font-size: 1.5em;
     white-space: nowrap;
     overflow: hidden;
   }
   
 .typing p:nth-child(1){
     opacity: 0;
-    width: 2.8em;
+    width: 3.4em;
     animation: type1 0.64s steps(9, end);
     animation-fill-mode: forwards;
   }
   
 .typing p:nth-child(2){
   opacity: 0;
-    width: 6em;
+    width: 6.3em;
     animation: type2 1.2s 0.64s steps(16, end);
     animation-fill-mode: forwards;
   }
   
   .typing p:nth-child(3){
     opacity: 0;
-    width: 13.4em;
+    width: 14em;
     animation: 
       type3 2.5s 1.84s steps(34, end), 
       cursor 1s step-end infinite alternate;
@@ -145,9 +148,10 @@ color: rgb(218, 165, 32);
   
 
 .parallax {
+  border: solid 4px rgb(218, 165, 32);
   margin-top: 30px;
   /* The image used */
-  border: solid 3px rgb(218, 165, 32);
+
   background-image: url("css_mobile.png");
   /* Set a specific height */
   min-height: 800px; 
@@ -159,15 +163,12 @@ color: rgb(218, 165, 32);
   background-size: cover;
 }
 
-#images {
-  background-color: #555555;
-  border: solid 3px rgb(218, 165, 32);
-}
 
 #contact-form {
+  border: solid 4px rgb(218, 165, 32);
   margin-top: 30px;
   background-color: #555555;
-  border: solid 3px rgb(218, 165, 32);
+
 
 }
 
@@ -176,11 +177,11 @@ color: rgb(218, 165, 32);
 }
 
 .text {
-  width: 380px;
+  width: 80%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
   border-radius: 6px;
   font-size: 20px;
   font-family: "Raleway";
@@ -205,7 +206,7 @@ color: rgb(218, 165, 32);
 }
 
 #button-submit {
-  width: 390px;
+  width: 84%;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -255,21 +256,3 @@ color: rgb(218, 165, 32);
   margin: 0 10px;
 }
 
-@media only screen and (min-width:860px) {
-    #main{
-    margin-right: 10%;
-    margin-left: 10%;
-    }  
-
-    .parallax {
-        background-image: url("css_desktop.png");
-    }
-
-    .typing p{
-    font-size: 36px;
-    }
-    .typing {
-      margin-top: 100px;
-      margin-left: 100px;
-    }
-}
