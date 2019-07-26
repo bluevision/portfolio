@@ -34,7 +34,7 @@ body {
 .link {
     display: inline-block;
     font-family: 'Raleway';
-    font-size: calc(16px + 0.5vw);
+    font-size: calc(14px + 0.5vw);
     color: rgb(64, 64, 64);
 
 
@@ -55,9 +55,8 @@ body {
 
 .heading {
     font-family: 'Raleway';
-    font-size: calc(20px + 1vw);
+    font-size: calc(18px + 1vw);
     color: rgb(218, 165, 32);
-    font-weight: bold;
 
 }
 
