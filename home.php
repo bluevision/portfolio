@@ -1,3 +1,20 @@
+<?php
+if($_POST["submit"]) {
+    $recipient="bluevision97@gmail.com";
+    $subject=$_POST["subject"];
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail:
+    $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: 
+    $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,7 +40,13 @@
                 <p>A Web Developer</p>
                 <p>and UI/UX Designer</p>
             </div>
-            <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec viverra libero, et vulputate orci. Quisque vel elit risus. Proin eleifend suscipit dictum. Mauris viverra metus ac purus varius elementum. Nulla ex quam, vestibulum quis maximus nec, elementum in tellus. Maecenas velit odio, imperdiet ut laoreet eget, suscipit vel risus. Aenean sed laoreet orci. Suspendisse potenti. Sed fringilla mattis metus, eu pretium libero sollicitudin sed.</p>
+            <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Fusce nec viverra libero, et vulputate orci. Quisque vel elit risus. 
+                Proin eleifend suscipit dictum. Mauris viverra metus ac purus varius elementum. 
+                Nulla ex quam, vestibulum quis maximus nec, elementum in tellus. 
+                Maecenas velit odio, imperdiet ut laoreet eget, suscipit vel risus. 
+                Aenean sed laoreet orci. Suspendisse potenti. Sed fringilla mattis metus, 
+                eu pretium libero sollicitudin sed.</p>
         </div>
         <div id="portfolio">
             <label class="heading">Portfolio</label>
@@ -34,18 +57,22 @@
                 <h3>Artwork Gallery</h3>
                 <img class="thumbnail" src="./davinci_thumb.png">
                 <ul class="list">
-                    <li>Photo Gallery is the boring</li>
+                    <li>Photo Gallery</li>
                     <li>CSS Grid Box</li>
                     <li>More Stuff</li>
                 </ul>
-            </div>
-            <div class="preview"><a href="https://lh3z1.csb.app/"><img class="thumbnail" src="./me_thumb.png"></a>
-                <ul class="list">
-                    <li>React</li>
-                    <li>JSX</li>
-                    <li>CSS</li>
-                </ul>
-            </div>
+            </div>         
+                <div class="preview" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1');">
+                    <h3>Web Application</h3>
+                    <h3>Ice Cream Cone Builder</h3>           
+                    <img class="thumbnail" src="./me_thumb.png">
+                    <ul class="list">
+                        <li>React</li>
+                        <li>JSX</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+
             <div class="preview"><img class="thumbnail" src="./survey_thumb.png">
                 <ul class="list">
                     <li>Photo Gallery</li>
@@ -59,22 +86,24 @@
         </div>
       
         <div id="contact-form">
+            <?=$thankYou ?>
+            <form method="post" action="home.php">
                 <div class="row">
-                        <input id="name" class="text" type="text" placeholder="Name*" required>
+                        <input name="sender" id="name" class="text" type="text" placeholder="Name*" required>
                 </div>
                     
                 <div class="row">
-                        <input class="text" type="email" placeholder="Email*" required>
+                        <input name="senderEmail" class="text" type="email" placeholder="Email*" required>
                 </div>
                         
                 <div class="row">
-                        <input class="text" type="text" placeholder="Subject">
+                        <input name="subject" class="text" type="text" placeholder="Subject">
                 </div>
                 <div class="row">
-                    <textarea class="text" placeholder="Message"></textarea>
+                    <textarea name="message" class="text" placeholder="Message"></textarea>
                 </div>
                 <div id="button-submit">
-                    <button type="submit" class="submit">Connect</button>
+                    <input type="submit" name="submit" class="submit">
                 </div>
                 <div id="connect-links">
                     <span>
@@ -83,6 +112,7 @@
                         <a href="https://twitter.com/CrainDaniel/" target="_blank"><img src="./twitter.png"></a>
                     </span>
                 </div>
-            </div>
+            </form>
+        </div>
     </main>
 </html>
