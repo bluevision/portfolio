@@ -177,7 +177,7 @@ body {
   margin-top: 30px;
   /* The image used */
 
-  background-image: url("css_mobile.png");
+  background-image: url("./images/css_mobile.png");
   /* Set a specific height */
   min-height: 500px; 
 
