@@ -12,7 +12,7 @@ if($_POST["submit"]) {
     mail($recipient, $subject, $mailBody, "From: 
     $sender <$senderEmail>");
 
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
+    $thankYou="<h3>Thank you! Your message has been sent.</h3>";
 }
 ?>
 <!DOCTYPE html>
@@ -81,37 +81,37 @@ if($_POST["submit"]) {
                 </ul>
             </div>
         </div>
-        <div id="contact">
+        <div id="contact-heading">
             <label class="heading">Contact Me</label>
         </div>
       
         <div id="contact-form">
-            
             <form method="post" action="index.php">
-                <div class="row">
-                        <input name="sender" id="name" class="text" type="text" placeholder="Name*" required>
-                </div>
+                <div id="contact">
+                    <div class="row">
+                    <input name="sender" id="name" class="text" type="text" placeholder="Name*" required>
+                    </div>
+                    <div class="row">
+                    <input name="senderEmail" class="text" type="email" placeholder="Email*" required>
+                    </div>
+                    <div class="row">
+                    <input name="subject" class="text" type="text" placeholder="Subject">
+                    </div>
+                    <div class="row">
+                    <textarea name="message" class="text textarea" placeholder="Message"></textarea>
+                    </div>
+                    <div id="button-submit">
+                        <input type="submit" name="submit" class="submit">
+                    </div>
+                    <div id="thankyou">
+                    <?=$thankYou ?>
+                    </div>
                     
-                <div class="row">
-                        <input name="senderEmail" class="text" type="email" placeholder="Email*" required>
-                </div>
-                        
-                <div class="row">
-                        <input name="subject" class="text" type="text" placeholder="Subject">
-                </div>
-                <div class="row">
-                    <textarea name="message" class="text" placeholder="Message"></textarea>
-                </div>
-                <div id="button-submit">
-                    <input type="submit" name="submit" class="submit">
-                </div>
-                <?=$thankYou ?>
-                <div id="connect-links">
-                    <span>
+                    <div id="connect-links">
                         <a href="https://github.com/bluevision/"  target="_blank"><img src="./images/github.png"></a>
                         <a href="https://www.linkedin.com/in/daniel-c-05bb56102/" target="_blank"><img src="./images/linkedin.png"></a>
                         <a href="https://twitter.com/CrainDaniel/" target="_blank"><img src="./images/twitter.png"></a>
-                    </span>
+                    </div>
                 </div>
             </form>
         </div>

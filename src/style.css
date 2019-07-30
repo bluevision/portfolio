@@ -215,6 +215,8 @@ body {
   margin-left: 20px;
 }
 #contact-form {
+  display: flex;
+  justify-content: center;
   border: solid 4px rgb(218, 165, 32);
   margin-top: 30px;
   background-color: #555555;
@@ -222,16 +224,23 @@ body {
 
 }
 
-#contact {
+#contact-heading {
   margin-top: 50px;
 }
 
-.text {
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
 
+.text {
+  border: solid 3px #555555;;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 8%;
   border-radius: 6px;
   font-size: 20px;
   font-family: "Raleway";
@@ -258,15 +267,19 @@ body {
 .text:focus {outline:none;
 }
 
+.textarea {
+  padding-bottom: 100px;
+}
+
 #name {
   margin-top: 30px;
 }
 
 #button-submit {
-  width: 84%;
+  width: 100%;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: right;
 
 }
@@ -296,16 +309,16 @@ body {
 
 
 .row {
+  margin-bottom: 0.3em;
+  width: 100%;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
 }
 
 
-
 #connect-links {
   text-align: center;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -317,13 +330,13 @@ body {
 
 @media screen and (max-width: 1030px) {
   .parallax {
-  background-image: url("css_medwindow.png");
+  background-image: url("./images/css_medwindow.png");
   }
 }
 
 @media screen and (max-width: 670px) {
   .parallax {
-  background-image: url("css_smallwindow.png");
+  background-image: url("./images/css_smallwindow.png");
   }
   #portfolio-content {
     display: flex;
