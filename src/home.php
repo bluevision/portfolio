@@ -55,7 +55,7 @@ if($_POST["submit"]) {
             <div class="preview">
                 <h3>Leonardo Da Vinci</h3>
                 <h3>Artwork Gallery</h3>
-                <img class="thumbnail" src="./davinci_thumb.png">
+                <img class="thumbnail" src="./images/davinci_thumb.png">
                 <ul class="list">
                     <li>Photo Gallery</li>
                     <li>CSS Grid Box</li>
@@ -65,7 +65,7 @@ if($_POST["submit"]) {
                 <div class="preview" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1');">
                     <h3>Web Application</h3>
                     <h3>Ice Cream Cone Builder</h3>           
-                    <img class="thumbnail" src="./me_thumb.png">
+                    <img class="thumbnail" src="./images/me_thumb.png">
                     <ul class="list">
                         <li>React</li>
                         <li>JSX</li>
@@ -73,7 +73,7 @@ if($_POST["submit"]) {
                     </ul>
                 </div>
 
-            <div class="preview"><img class="thumbnail" src="./survey_thumb.png">
+            <div class="preview"><img class="thumbnail" src="./images/survey_thumb.png">
                 <ul class="list">
                     <li>Photo Gallery</li>
                     <li>CSS Grid Box</li>
@@ -86,8 +86,8 @@ if($_POST["submit"]) {
         </div>
       
         <div id="contact-form">
-            <?=$thankYou ?>
-            <form method="post" action="home.php">
+            
+            <form method="post" action="index.php">
                 <div class="row">
                         <input name="sender" id="name" class="text" type="text" placeholder="Name*" required>
                 </div>
@@ -105,11 +105,12 @@ if($_POST["submit"]) {
                 <div id="button-submit">
                     <input type="submit" name="submit" class="submit">
                 </div>
+                <?=$thankYou ?>
                 <div id="connect-links">
                     <span>
-                        <a href="https://github.com/bluevision/"  target="_blank"><img src="./github.png"></a>
-                        <a href="https://www.linkedin.com/in/daniel-c-05bb56102/" target="_blank"><img src="./linkedin.png"></a>
-                        <a href="https://twitter.com/CrainDaniel/" target="_blank"><img src="./twitter.png"></a>
+                        <a href="https://github.com/bluevision/"  target="_blank"><img src="./images/github.png"></a>
+                        <a href="https://www.linkedin.com/in/daniel-c-05bb56102/" target="_blank"><img src="./images/linkedin.png"></a>
+                        <a href="https://twitter.com/CrainDaniel/" target="_blank"><img src="./images/twitter.png"></a>
                     </span>
                 </div>
             </form>
