@@ -52,35 +52,39 @@ if($_POST["submit"]) {
             <label class="heading">Portfolio</label>
         </div>
         <div id="portfolio-content">
-            <div class="preview">
-                <h3>Leonardo Da Vinci</h3>
-                <h3>Artwork Gallery</h3>
-                <img class="thumbnail" src="./images/davinci_thumb.png">
-                <ul class="list">
-                    <li>Photo Gallery</li>
-                    <li>CSS Grid Box</li>
-                    <li>More Stuff</li>
-                </ul>
-            </div>         
-                <div class="preview" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1');">
-                    <h3>Web Application</h3>
-                    <h3>Ice Cream Cone Builder</h3>           
-                    <img class="thumbnail" src="./images/me_thumb.png">
-                    <ul class="list">
-                        <li>React</li>
-                        <li>JSX</li>
-                        <li>CSS</li>
-                    </ul>
+            
+            <div class="preview" onclick="window.open('./davinci/main.html')";>
+                <div>
+                    <img src="./images/davinci_thumb.png">
+                </div>     
+                <div>
+                    <h3>Leonardo Da Vinci Artwork Gallery</h3>
+                    <h2>Technology</h2>
+                    <p>lorem ipsum, more latin filler stuffies.</p>
                 </div>
-
-            <div class="preview"><img class="thumbnail" src="./images/survey_thumb.png">
-                <ul class="list">
-                    <li>Photo Gallery</li>
-                    <li>CSS Grid Box</li>
-                    <li>More Stuff</li>
-                </ul>
             </div>
-        </div>
+
+            <div class="preview">
+                <div>
+                    <img src="./images/ice_cream_thumb.png"/>
+                </div>
+                <div>
+                    <h3>Ice Cream Cone Builder</h3>
+                    <h2>Technology</h2>
+                    <p>lorem ipsum, more latin filler stuffies.</p>
+                </div>
+            </div>  
+            <div class="preview">
+                <span>
+                    <img src="./images/survey_thumb.png"/>
+                </span>
+                <span>
+                    <h3>Ice Cream Cone Builder</h3>
+                    <h2>Technology</h2>
+                    <p>lorem ipsum, more latin filler stuffies.</p>
+                </span>
+            </div>
+    </div>
         <div id="contact-heading">
             <label class="heading">Contact Me</label>
         </div>

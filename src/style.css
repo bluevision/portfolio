@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +8,14 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
 }
 html {
     scroll-behavior: smooth;
     width: 100%;
 }
 body {
-    background-color: white;
+    background-color: rgb(245,245,245);
     font-family: 'Raleway';
     width: 100%;
 }
@@ -70,14 +72,6 @@ body {
   color: white;
 }
 
-
-
-.thumbnail {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 80%;
-
-}
 
 #portfolio {
     margin-top: 50px;
@@ -188,31 +182,38 @@ body {
   background-size: cover;
 }
 #portfolio-content {
+
   margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .preview {
-  font-family: Arial;
+  border: solid 4px rgb(218, 165, 32);
+  font-family: 'Raleway';
   width: 30%;
   flex-direction: column;
-  height: 400px;
   display: flex;
   align-items: center;
-  background-color: rgb(30,30,30);
-  border: solid 4px rgb(30,30,30);
-  color: white;
-  transition: all ease .25s;
+  transition: all ease .5s;
 }
 
-.preview:hover {
-  border: solid 4px rgb(218, 165, 32);
+.preview img{
+  max-width: 100%;
+}
+
+.preview h3 {
+  font-size: 1em;
 }
 
 
 .list {
+    font-family: 'Raleway';
   margin-left: 20px;
+}
+
+ul {
+  list-style: none;
 }
 #contact-form {
   display: flex;
@@ -345,19 +346,23 @@ body {
 
   .preview {
     margin-top: 30px;
-    flex-direction: column;
-    border: solid 4px rgb(218, 165, 32);
     width: 100%;
-    font-size: 20px;
-    height: 400px;
+    display: grid;
+    grid-template-columns: auto 40%;
+    grid-gap: 5%;
+
+  }
+.preview img {
+  grid-column: 1;
+  max-width: 100%;
+}
+
+  .preview h3 {
+    font-size: 1em;
   }
 
-  .thumbnail {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 50%;
   
-  }
+
 
 }
 
