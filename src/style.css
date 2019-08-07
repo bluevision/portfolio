@@ -11,14 +11,7 @@
   -webkit-overflow-scrolling: touch;
 }
 html {
-    scroll-behavior: smooth;
     width: 100%;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
 }
 
 body {
