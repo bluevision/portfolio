@@ -54,7 +54,7 @@ if($_POST["submit"]) {
         <div id="portfolio-content">
             
             <div class="preview" onclick="window.open('./davinci/main.html')";>
-                <div>
+                <div id="davinci">
                     <img src="./images/davinci_thumb.png">
                 </div>     
                 <div>

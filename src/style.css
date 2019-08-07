@@ -171,9 +171,9 @@ body {
   margin-top: 30px;
   /* The image used */
 
-  background-image: url("./images/css_mobile.png");
+  background-image: url("./images/css_desktop.png");
   /* Set a specific height */
-  min-height: 500px; 
+  height: 800px; 
 
   /* Create the parallnameax scrolling effect */
 
@@ -192,15 +192,16 @@ body {
   border: solid 4px rgb(218, 165, 32);
   font-family: 'Raleway';
   width: 30%;
-  flex-direction: column;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  
   transition: all ease .5s;
 }
 
 .preview img{
   max-width: 100%;
 }
+
 
 .preview h3 {
   font-size: 1em;
@@ -345,16 +346,12 @@ ul {
   }
 
   .preview {
-    margin-top: 30px;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto 40%;
-    grid-gap: 5%;
+    margin-bottom: 30px;
 
   }
 .preview img {
-  grid-column: 1;
-  max-width: 100%;
+  width: 100%;
 }
 
   .preview h3 {
