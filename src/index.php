@@ -80,10 +80,12 @@ $(document).ready(function(){
         </div>
         <div id="portfolio-content">
             
-            <div class="preview" onclick="window.open('./davinci/main.html')";>
-                <div id="davinci">
-                    <img src="./images/davinci_thumb.png">
-                </div>     
+            <div class="preview">
+                <div id="container1">
+                    <img src="./images/davinci_thumb.png" class="image" style="width:100%">
+                    <div class="overlay1"></div>     
+                    <div class="launch" onclick="window.open('./davinci/main.html')";>Launch</div>
+                </div>
                 <div>
                     <h3>Leonardo Da Vinci Artwork Gallery</h3>
                     <h2>Technology</h2>
@@ -92,8 +94,10 @@ $(document).ready(function(){
             </div>
 
             <div class="preview">
-                <div>
-                    <img src="./images/ice_cream_thumb.png"/>
+                <div id="container2">
+                    <img src="./images/ice_cream_thumb.png" class="image"/>
+                    <div class="overlay2"></div>     
+                    <div class="launch" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1')";>Launch</div>
                 </div>
                 <div>
                     <h3>Ice Cream Cone Builder</h3>
@@ -101,17 +105,19 @@ $(document).ready(function(){
                     <p>lorem ipsum, more latin filler stuffies.</p>
                 </div>
             </div>  
+
             <div class="preview">
-                <span>
-                    <img src="./images/survey_thumb.png"/>
-                </span>
-                <span>
-                    <h3>Ice Cream Cone Builder</h3>
+                <div id="">
+                    <img src="./images/survey_thumb.png" class="image"/>
+                </div>
+                <div>
+                    <h3>Product Landing Page</h3>
                     <h2>Technology</h2>
                     <p>lorem ipsum, more latin filler stuffies.</p>
-                </span>
+                </div>
             </div>
-    </div>
+        </div>
+
         <div id="contact-heading">
             <label class="heading">Contact Me</label>
         </div>

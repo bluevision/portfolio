@@ -182,7 +182,6 @@ body {
   background-size: cover;
 }
 #portfolio-content {
-
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -194,13 +193,104 @@ body {
   width: 30%;
   display: flex;
   flex-direction: column;
-  
   transition: all ease .5s;
 }
-
-.preview img{
-  max-width: 100%;
+.image{
+  display: block;
+  width: 100%;
+  height: auto;
 }
+
+.launch {
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  border-radius: 6px;
+  font-family: "Raleway";
+  font-size: 20px;
+  color: white;
+  border: solid 3px rgb(218, 165, 32);
+}
+
+
+.launch:hover {
+  background-color: rgb(218, 165, 32);
+  transition: .2s ease;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(102, 127, 153);
+}
+
+
+#container1 {
+  position: relative;
+  width: 100%;
+}
+
+#container1:hover .overlay1 {
+  opacity: 0.8;
+}
+
+#container1:hover .launch {
+  opacity: 1;
+}
+
+
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FAA1E1;
+}
+
+#container2 {
+  position: relative;
+  width: 100%;
+}
+
+#container2:hover .overlay2 {
+  opacity: 0.8;
+}
+
+#container2:hover .launch {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
 
 
 .preview h3 {
