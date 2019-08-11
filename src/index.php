@@ -52,10 +52,10 @@ $(document).ready(function(){
     </head>
     <main id="main">
         <div class="nav">
-            <div class="links">
+            <div>
                 <label class="heading">DANIEL CRAIN</label>
             </div>
-            <div class="links">
+            <div>
                 <a href="#portfolio"><div class="link link-portfolio">Portfolio</div></a>
                 <a href="#contact"><div class="link">Contact</div></a>
             </div>
@@ -81,39 +81,41 @@ $(document).ready(function(){
         <div id="portfolio-content">
             
             <div class="preview">
+                <div>
+                    <a href="#portfolio"><div class="preview-link">Leonardo Da Vinci Artwork Gallery</div></a>
+                    <h2>Technology</h2>
+                    <p>lorem ipsum, more latin filler stuffies.</p>
+                    <div class="launch hide-desktop" onclick="window.open('./davinci/main.html')";>Launch</div>
+                </div>
                 <div id="container1">
                     <img src="./images/davinci_thumb.png" class="image" style="width:100%">
                     <div class="overlay1"></div>     
-                    <div class="launch" onclick="window.open('./davinci/main.html')";>Launch</div>
-                </div>
-                <div>
-                    <h3>Leonardo Da Vinci Artwork Gallery</h3>
-                    <h2>Technology</h2>
-                    <p>lorem ipsum, more latin filler stuffies.</p>
+                    <div class="launch hide-mobile" onclick="window.open('./davinci/main.html')";>Launch</div>
                 </div>
             </div>
 
             <div class="preview">
+                <div>
+                <a href="#portfolio"><div class="preview-link">Ice Cream Cone Builder</div></a>
+                    <h2>Technology</h2>
+                    <p>lorem ipsum, more latin filler stuffies.</p>
+                    <div class="launch hide-desktop" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1')";>Launch</div>
+                </div>
                 <div id="container2">
                     <img src="./images/ice_cream_thumb.png" class="image"/>
                     <div class="overlay2"></div>     
-                    <div class="launch" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1')";>Launch</div>
-                </div>
-                <div>
-                    <h3>Ice Cream Cone Builder</h3>
-                    <h2>Technology</h2>
-                    <p>lorem ipsum, more latin filler stuffies.</p>
+                    <div class="launch hide-mobile" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1')";>Launch</div>
                 </div>
             </div>  
 
             <div class="preview">
-                <div id="">
-                    <img src="./images/survey_thumb.png" class="image"/>
-                </div>
                 <div>
-                    <h3>Product Landing Page</h3>
+                <a href="#portfolio"><div class="preview-link">Product Landing Page</div></a>
                     <h2>Technology</h2>
                     <p>lorem ipsum, more latin filler stuffies.</p>
+                </div>
+                <div id="">
+                    <img src="./images/survey_thumb.png" class="image"/>
                 </div>
             </div>
         </div>

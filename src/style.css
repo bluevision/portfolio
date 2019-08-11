@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
 }
+
 html {
     width: 100%;
 }
@@ -32,37 +33,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: calc(14px + 0.5vw);
     margin-top: 50px;
-
-
+    color: rgb(64, 64, 64);
 }
+
 .link {
     display: inline-block;
-    font-family: 'Raleway';
-    font-size: calc(14px + 0.5vw);
     color: rgb(64, 64, 64);
-
-
 }
-
-.link-portfolio {
-  margin-right: 1em;
-
-}
-
 
 .link:hover{
   color: rgb(218, 165, 32);
   text-decoration: underline;
-        transition: all ease .2s;
+  transition: all ease .2s;
+}
 
+.link-portfolio {
+  margin-right: 1em;
 }
 
 .heading {
     font-family: 'Raleway';
     font-size: calc(18px + 1vw);
     color: rgb(218, 165, 32);
-
 }
 
 #paragraph {
@@ -165,15 +159,17 @@ body {
   50% {border-color: transparent;}
 }
   
-
 .parallax {
-  border: solid 4px rgb(218, 165, 32);
   margin-top: 30px;
+  border: solid 4px rgb(218, 165, 32);
+  background-image: url("./images/css_smallwindow.png");
+
   /* The image used */
 
   background-image: url("./images/css_desktop.png");
   /* Set a specific height */
   height: 800px; 
+
 
   /* Create the parallnameax scrolling effect */
 
@@ -181,20 +177,38 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.hide-mobile {
+  opacity: none;
+}
+
+hide-desktop {
+  opacity: none;
+}
+
 #portfolio-content {
+  flex-direction: column;
   margin-top: 30px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
+
 .preview {
+  color: rgb(64, 64, 64);
+  width: 100%;
+  margin-bottom: 30px;
   border: solid 4px rgb(218, 165, 32);
   font-family: 'Raleway';
-  width: 30%;
   display: flex;
   flex-direction: column;
   transition: all ease .5s;
 }
+
+.preview-link:hover {
+  text-decoration: underline;
+  transition: all ease .2s;
+}
+
 .image{
   display: block;
   width: 100%;
@@ -202,12 +216,8 @@ body {
 }
 
 .launch {
-  opacity: 0;
   color: white;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -248,14 +258,10 @@ body {
   width: 100%;
 }
 
-#container1:hover .overlay1 {
-  opacity: 0.8;
+#container2 {
+  position: relative;
+  width: 100%;
 }
-
-#container1:hover .launch {
-  opacity: 1;
-}
-
 
 
 .overlay2 {
@@ -271,18 +277,6 @@ body {
   background-color: #FAA1E1;
 }
 
-#container2 {
-  position: relative;
-  width: 100%;
-}
-
-#container2:hover .overlay2 {
-  opacity: 0.8;
-}
-
-#container2:hover .launch {
-  opacity: 1;
-}
 
 
 
@@ -295,6 +289,7 @@ body {
 
 .preview h3 {
   font-size: 1em;
+
 }
 
 
@@ -373,8 +368,8 @@ ul {
   margin-top: 10px;
   margin-bottom: 20px;
   text-align: right;
-
 }
+
 .submit {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -386,17 +381,16 @@ ul {
   color: white;
   border: solid 3px rgb(218, 165, 32);
   background-color: transparent;
-
-
-
 }
+
 .submit:hover{
   color: black;
   background-color: rgb(218, 165, 32);
-      transition: all ease .2s;
+  transition: all ease .2s;
 }
-.submit:focus {outline:none;
-  
+
+.submit:focus {
+  outline: none; 
 }
 
 
@@ -420,36 +414,52 @@ ul {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (min-width: 1030px) {
   .parallax {
   background-image: url("./images/css_medwindow.png");
   }
 }
 
-@media screen and (max-width: 670px) {
-  .parallax {
-  background-image: url("./images/css_smallwindow.png");
+@media screen and (min-width: 670px) {
+  .hide-mobile {
+    display: inline;
   }
+  
+  .hide-desktop {
+    display: hide;
+  }
+
   #portfolio-content {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .preview {
-    width: 100%;
-    margin-bottom: 30px;
-
+    width: 30%;
   }
-.preview img {
-  width: 100%;
-}
 
-  .preview h3 {
-    font-size: 1em;
+  .launch {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
   }
 
   
+  #container1:hover .overlay1 {
+    opacity: 0.8;
+  }
 
+  #container1:hover .launch {
+    opacity: 1;
+  }
 
+  #container2:hover .overlay2 {
+    opacity: 0.8;
+  }
+
+  #container2:hover .launch {
+    opacity: 1;
+  }
+  
 }
 
