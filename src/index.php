@@ -83,8 +83,8 @@ $(document).ready(function(){
             <div class="preview">
                 <div>
                     <a href="#portfolio"><div class="preview-link">Leonardo Da Vinci Artwork Gallery</div></a>
-                    <h2>Technology</h2>
-                    <p>lorem ipsum, more latin filler stuffies.</p>
+                    <h2>Web Technologies</h2>
+                    <p>JQuery, CSS, HTML</p>
                     <div class="launch hide-desktop" onclick="window.open('./davinci/main.html')";>Launch</div>
                 </div>
                 <div id="container1">
@@ -97,7 +97,7 @@ $(document).ready(function(){
             <div class="preview">
                 <div>
                 <a href="#portfolio"><div class="preview-link">Ice Cream Cone Builder</div></a>
-                    <h2>Technology</h2>
+                    <h2>Web Technologies</h2>
                     <p>lorem ipsum, more latin filler stuffies.</p>
                     <div class="launch hide-desktop" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1')";>Launch</div>
                 </div>
@@ -111,7 +111,7 @@ $(document).ready(function(){
             <div class="preview">
                 <div>
                 <a href="#portfolio"><div class="preview-link">Product Landing Page</div></a>
-                    <h2>Technology</h2>
+                    <h2>Web Technologies</h2>
                     <p>lorem ipsum, more latin filler stuffies.</p>
                 </div>
                 <div id="">

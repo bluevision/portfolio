@@ -11,6 +11,10 @@
   -webkit-overflow-scrolling: touch;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
     width: 100%;
 }
@@ -179,12 +183,9 @@ body {
 }
 
 .hide-mobile {
-  opacity: none;
+  display: none;
 }
 
-hide-desktop {
-  opacity: none;
-}
 
 #portfolio-content {
   flex-direction: column;
@@ -204,9 +205,18 @@ hide-desktop {
   transition: all ease .5s;
 }
 
-.preview-link:hover {
-  text-decoration: underline;
-  transition: all ease .2s;
+.preview h2 {
+  font-size: calc(11px + 0.5vw)
+}
+
+.preview p {
+  font-size: calc(11px + 0.5vw)
+}
+
+.preview-link {
+  text-align: center;
+  color: rgb(64, 64, 64);
+  font-size: calc(20px + 0.5vw)
 }
 
 .image{
@@ -461,5 +471,8 @@ ul {
     opacity: 1;
   }
   
+  .preview-link {
+    font-size: calc(15px + 0.5vw)
+  }
 }
 
