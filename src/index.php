@@ -76,29 +76,31 @@ $(document).ready(function(){
                 eu pretium libero sollicitudin sed.</p>
         </div>
         <div id="portfolio">
-            <label class="heading">Portfolio</label>
+            <label class="heading">Portfolio Projects</label>
         </div>
         <div id="portfolio-content">
             
-            <div class="preview">
+            <div class="preview davinci">
                 <div>
-                    <a href="#portfolio"><div class="preview-link">Leonardo Da Vinci Artwork Gallery</div></a>
-                    <h2>Web Technologies</h2>
-                    <p>JQuery, CSS, HTML</p>
+                    <a href="#portfolio"><div class="preview-link">Leonardo DaVinci Artwork Gallery</div></a>
                     <div class="launch hide-desktop" onclick="window.open('./davinci/main.html')";>Launch</div>
+                    <p>A timeline of Leonardo DaVinci's major extant works. Using JQuery, the artwork previews expand into a full image once tapped or clicked, along with a corresponding description.</p>
                 </div>
-                <div id="container1">
-                    <img src="./images/davinci_thumb.png" class="image" style="width:100%">
-                    <div class="overlay1"></div>     
-                    <div class="launch hide-mobile" onclick="window.open('./davinci/main.html')";>Launch</div>
-                </div>
+                    <div id="container1">
+                        <img src="./images/davinci_thumb.png" class="image" style="width:100%">
+                        <div class="overlay1"></div>     
+                        <div class="launch hide-mobile" onclick="window.open('./davinci/main.html')";>Launch</div>
+                    </div>
+                    <div class="technologies">
+                        <img src="./images/jquery.png">
+                        <img src="./images/css3.png">
+                    </div>
             </div>
 
-            <div class="preview">
+            <div class="preview ice-cream">
                 <div>
-                <a href="#portfolio"><div class="preview-link">Ice Cream Cone Builder</div></a>
-                    <h2>Web Technologies</h2>
-                    <p>lorem ipsum, more latin filler stuffies.</p>
+                <a href="#portfolio"><div class="preview-link">Ice Cream Builder</div></a>
+                    <p>A proof-of-concept ecommerce platform for products with multiple options in unique categories. Built in React, Ice Cream Builder tracks user selection and updates the total price accordingly. It scales easily for additional options and is configurable to accomodate other products. </p>
                     <div class="launch hide-desktop" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1')";>Launch</div>
                 </div>
                 <div id="container2">
@@ -106,7 +108,11 @@ $(document).ready(function(){
                     <div class="overlay2"></div>     
                     <div class="launch hide-mobile" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1')";>Launch</div>
                 </div>
-            </div>  
+                    <div class="technologies">
+                        <img src="./images/react.png">
+                        <img src="./images/css3.png">
+                    </div>
+            </div>
 
             <div class="preview">
                 <div>
@@ -125,7 +131,7 @@ $(document).ready(function(){
         </div>
       
         <div id="contact-form">
-            <form method="post" action="index.php">
+            <form method="post" action="index.php/#contact">
                 <div id="contact">
                     <div class="row">
                     <input name="sender" id="name" class="text" type="text" placeholder="Name*" required>
@@ -146,7 +152,7 @@ $(document).ready(function(){
                     <?=$thankYou ?>
                     </div>
                     
-                    <div id="connect-links">
+                    <div class="connect-links">
                         <a href="https://github.com/bluevision/"  target="_blank"><img src="./images/github.png"></a>
                         <a href="https://www.linkedin.com/in/daniel-c-05bb56102/" target="_blank"><img src="./images/linkedin.png"></a>
                         <a href="https://twitter.com/CrainDaniel/" target="_blank"><img src="./images/twitter.png"></a>
