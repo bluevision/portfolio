@@ -56,6 +56,15 @@ body {
   margin-right: 1em;
 }
 
+#me {
+  margin-top: calc(5vw);
+  margin-left: calc(6vw);
+  border-radius: 50%;
+  height: calc(5vw + 75px);
+  width: calc(5vw + 75px);
+
+}
+
 .heading {
     font-family: 'Raleway';
     font-size: calc(18px + 1vw);
@@ -64,7 +73,7 @@ body {
 
 #paragraph {
   margin-left: calc(6vw);
-  margin-right: calc(30vw);
+  margin-right: calc(5vw);
   margin-top: 30px;
   color: white;
 }
@@ -88,6 +97,13 @@ body {
     grid-gap: 20px;
 
 
+}
+
+#about-me {
+
+  display: inline;
+  display: flex;
+  flex-direction: row;
 }
 
 .typing {

@@ -61,12 +61,15 @@ $(document).ready(function(){
             </div>
         </div>
 
-        <div class="parallax">        
+        <div class="parallax">   
+            <div id="about-me">
+            <img id="me" src="./images/me.jpg">
             <div class="typing">
                 <p>Hello, I'm Daniel</p> 
                 <p>A Web Developer</p>
                 <p>and UI/UX Designer</p>
             </div>
+            </div> 
             <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Fusce nec viverra libero, et vulputate orci. Quisque vel elit risus. 
                 Proin eleifend suscipit dictum. Mauris viverra metus ac purus varius elementum. 
