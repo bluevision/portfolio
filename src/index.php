@@ -83,9 +83,9 @@ $(document).ready(function(){
             <div class="preview davinci">
                 <div>
                     <a href="#portfolio"><div class="preview-link">Leonardo DaVinci Artwork Gallery</div></a>
-                    <div class="launch hide-desktop" onclick="window.open('./davinci/main.html')";>Launch</div>
                     <p>A timeline of Leonardo DaVinci's major extant works. Using JQuery, the artwork previews expand into a full image once tapped or clicked, along with a corresponding description.</p>
-                </div>
+                    <div class="launch hide-desktop" onclick="window.open('./davinci/main.html')";>Launch</div>
+               </div>
                     <div id="container1">
                         <img src="./images/davinci_thumb.png" class="image" style="width:100%">
                         <div class="overlay1"></div>     
