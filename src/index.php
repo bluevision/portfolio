@@ -65,18 +65,16 @@ $(document).ready(function(){
             <div id="about-me">
             <img id="me" src="./images/me.jpg">
             <div class="typing">
-                <p>Hello, I'm Daniel</p> 
+                <p>Hello, I'm Daniel,</p> 
                 <p>A Web Developer</p>
                 <p>and UI/UX Designer</p>
             </div>
             </div> 
-            <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Fusce nec viverra libero, et vulputate orci. Quisque vel elit risus. 
-                Proin eleifend suscipit dictum. Mauris viverra metus ac purus varius elementum. 
-                Nulla ex quam, vestibulum quis maximus nec, elementum in tellus. 
-                Maecenas velit odio, imperdiet ut laoreet eget, suscipit vel risus. 
-                Aenean sed laoreet orci. Suspendisse potenti. Sed fringilla mattis metus, 
-                eu pretium libero sollicitudin sed.</p>
+            <p id="paragraph" class="tab"> I currently reside in west Michigan with my wife and son. Proficient with HTML5, CSS3, 
+            and JQuery, I love making beautiful user interfaces and an intuitive user experience. 
+            I’m interested in automating business processes, to provide a seamless customer experience, 
+            streamline sales, and ultimately increase revenue; Highly driven and a self-learner, I’m currently 
+            diving into JavaScript frameworks, like React/Redux and Vue.JS, to build web applications that do just that.</p>
         </div>
         <div id="portfolio">
             <label class="heading">Portfolio Projects</label>
@@ -136,6 +134,7 @@ $(document).ready(function(){
         <div id="contact-form">
             <form method="post" action="index.php/#contact">
                 <div id="contact">
+                <p style="color: white; margin-top: 2em; font-size: 1.2em;">If you like my work, send me a message! I'm always interested to hear about an exciting new opportunity.</p>
                     <div class="row">
                     <input name="sender" id="name" class="text" type="text" placeholder="Name*" required>
                     </div>
