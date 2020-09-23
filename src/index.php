@@ -70,11 +70,11 @@ $(document).ready(function(){
                 <p>and UI/UX Designer</p>
             </div>
             </div> 
-            <p id="paragraph" class="tab"> I currently reside in west Michigan with my wife and son. Proficient with HTML5, CSS3, 
-            and JQuery, I love making beautiful user interfaces and an intuitive user experience. 
+            <p id="paragraph" class="tab"> I currently reside in west Michigan with my wife and two children. Proficient with HTML, CSS, 
+            and JavaScript, I love making beautiful user interfaces and an intuitive user experience. 
             I’m interested in automating business processes, to provide a seamless customer experience, 
             streamline sales, and ultimately increase revenue; Highly driven and a self-learner, I’m currently 
-            diving into JavaScript frameworks, like React/Redux and Vue.JS, to build web applications that do just that.</p>
+            diving into JavaScript frameworks, React.JS and Vue.JS, to build web applications that do just that.</p>
         </div>
         <div id="portfolio">
             <label class="heading">Portfolio Projects</label>
@@ -115,15 +115,21 @@ $(document).ready(function(){
                     </div>
             </div>
 
-            <div class="preview">
+            <div class="preview crm">
                 <div>
-                <a href="#portfolio"><div class="preview-link">Product Landing Page</div></a>
-                    <h2>Web Technologies</h2>
-                    <p>lorem ipsum, more latin filler stuffies.</p>
+                <a href="#portfolio"><div class="preview-link">Contact List</div></a>
+                    <p>Contact List is built in VueJS with Material Design components. You can add, delete, or modify existing contacts. Find contacts with the search menu by first, last, or company name.</p>
+                    <div class="launch hide-desktop" onclick="window.open('https://github.com/bluevision/vue-crm/')";>View on GitHub</div>
                 </div>
-                <div id="">
-                    <img src="./images/survey_thumb.png" class="image"/>
+                <div id="container3">
+                    <img src="./images/crm.png" class="image"/>
+                    <div class="overlay3"></div>     
+                    <div class="launch hide-mobile" onclick="window.open('https://github.com/bluevision/vue-crm/')";>View on GitHub</div>
                 </div>
+                <div class="technologies">
+                        <img src="./images/vue.png">
+                        <img src="./images/css3.png">
+                    </div>
             </div>
         </div>
 
