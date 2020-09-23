@@ -83,7 +83,7 @@ $(document).ready(function(){
             
             <div class="preview davinci">
                 <div>
-                    <a href="#portfolio"><div class="preview-link">Leonardo DaVinci Artwork Gallery</div></a>
+                    <a href="./davinci/main.html" target="_blank"><div class="preview-link">Leonardo DaVinci Artwork Gallery</div></a>
                     <p>A timeline of Leonardo DaVinci's major extant works. Using JQuery, the artwork previews expand into a full image once tapped or clicked, along with a corresponding description.</p>
                     <div class="launch hide-desktop" onclick="window.open('./davinci/main.html')";>Launch</div>
                </div>
@@ -100,7 +100,7 @@ $(document).ready(function(){
 
             <div class="preview ice-cream">
                 <div>
-                <a href="#portfolio"><div class="preview-link">Ice Cream Builder</div></a>
+                <a href="https://codesandbox.io/s/broken-pine-lh3z1" target="_blank"><div class="preview-link">Ice Cream Builder</div></a>
                     <p>A proof-of-concept ecommerce platform for products with multiple options in unique categories. Built in React, Ice Cream Builder tracks user selection and updates the total price accordingly. It scales easily for additional options and is configurable to accomodate other products. </p>
                     <div class="launch hide-desktop" onclick="window.open('https://codesandbox.io/s/broken-pine-lh3z1')";>Launch</div>
                 </div>
@@ -117,12 +117,12 @@ $(document).ready(function(){
 
             <div class="preview crm">
                 <div>
-                <a href="#portfolio"><div class="preview-link">Contact List</div></a>
+                <a href="https://github.com/bluevision/vue-crm/" target="_blank"><div class="preview-link">Contact List</div></a>
                     <p>Contact List is built in VueJS with Material Design components. You can add, delete, or modify existing contacts. Find contacts with the search menu by first, last, or company name.</p>
                     <div class="launch hide-desktop" onclick="window.open('https://github.com/bluevision/vue-crm/')";>View on GitHub</div>
                 </div>
                 <div id="container3">
-                    <img src="./images/crm.png" class="image"/>
+                    <img src="./images/contact.png" class="image"/>
                     <div class="overlay3"></div>     
                     <div class="launch hide-mobile" onclick="window.open('https://github.com/bluevision/vue-crm/')";>View on GitHub</div>
                 </div>
