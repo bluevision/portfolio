@@ -1,18 +1,18 @@
 <?php
-if($_POST["submit"]) {
+if(isset($_POST["submit"])) {
     $recipient="bluevision97@gmail.com";
     $subject=$_POST["subject"];
     $sender=$_POST["sender"];
     $senderEmail=$_POST["senderEmail"];
     $message=$_POST["message"];
 
-    $mailBody="Name: $sender\nEmail:
-    $senderEmail\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: 
+    $txt = "You have received an e-mail from ".$sender.".\n\n".$message;
+    mail($recipient, $subject, $txt, "From: 
     $sender <$senderEmail>");
 
     $thankYou="<h3>Thank you! Your message has been sent.</h3>";
+    header("Location: index.php?mailsend");
 }
 ?>
 <!DOCTYPE html>
@@ -138,7 +138,7 @@ $(document).ready(function(){
         </div>
       
         <div id="contact-form">
-            <form method="post" action="index.php/#contact">
+            <form method="post" action="index.php">
                 <div id="contact">
                 <p style="color: white; margin-top: 2em; font-size: 1.2em;">If you like my work, send me a message! I'm always interested to hear about an exciting new opportunity.</p>
                     <div class="row">
@@ -154,7 +154,7 @@ $(document).ready(function(){
                     <textarea name="message" class="text textarea" placeholder="Message"></textarea>
                     </div>
                     <div id="button-submit">
-                        <input type="submit" name="submit" class="submit">
+                    <button type="submit" class="submit">Send</button>
                     </div>
                     <div id="thankyou">
                     <?=$thankYou ?>
