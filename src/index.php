@@ -162,7 +162,7 @@ $(document).ready(function(){
                     
                     <div class="connect-links">
                         <a href="https://github.com/bluevision/"  target="_blank"><img src="./images/github.png"></a>
-                        <a href="https://www.linkedin.com/in/daniel-c-05bb56102/" target="_blank"><img src="./images/linkedin.png"></a>
+                        <a href="https://www.linkedin.com/in/danielrcrain/" target="_blank"><img src="./images/linkedin.png"></a>
                         <a href="https://twitter.com/CrainDaniel/" target="_blank"><img src="./images/twitter.png"></a>
                     </div>
                 </div>
